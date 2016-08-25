@@ -1,0 +1,34 @@
+{
+  "name": "clipt",
+  "version": "1.0.0",
+  "description": "a ClipperLib port for the modern era",
+  "main": "dist/index.js",
+  "repository": "github:folsom-labs/clipt",
+  "scripts": {
+    "build": "babel src -d dist",
+    "lint": "eslint src",
+    "prepublish": "npm run build",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "keywords": [
+    "clipper",
+    "clipperjs",
+    "polygon",
+    "geometry",
+    "jsclipper"
+  ],
+  "author": "psgibbs",
+  "license": "BSL-1.0",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-eslint": "^6.1.2",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-register": "^6.14.0",
+    "chai": "^3.5.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.1.0",
+    "eslint-plugin-react": "^6.1.2",
+    "mocha": "^3.0.2"
+  }
+}
